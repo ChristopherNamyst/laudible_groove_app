@@ -1,0 +1,22 @@
+
+.App {
+  text-align: center;
+}
+
+#kick,#hh,#snare,#clap,#perc,#misc{
+  background-color: ##daf48b;
+
+}
+#kick:active,#hh:active,#snare:active,#clap:active,#perc:active,#misc:active {
+  background-color: #21f2b0;
+}
+
+.button-group-kick,.button-group-hh,.button-group-snare,.button-group-clap, .button-group-perc, .button-group-misc {
+  display:flex;
+  flex-direction:column;
+  float:left;
+}
+.sample-bar {
+  display:flex;
+
+}
