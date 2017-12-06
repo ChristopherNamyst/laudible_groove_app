@@ -11,7 +11,7 @@ class MiscLoader extends Component {
 render() {
   return(
     <div className="MiscLoader">
-      <button id="MiscLoader" type="button" onClick={this.props.fetchSounds}>heyo</button>
+      <button id="MiscLoader" type="button" onClick={this.props.fetchSounds}>Load</button>
     </div>
 
   )

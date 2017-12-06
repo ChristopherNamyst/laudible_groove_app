@@ -11,9 +11,13 @@ class ClapLoader extends Component {
 render() {
   return(
     <div className="ClapLoader">
-      <button id="ClapLoader" type="button" onClick={this.props.fetchSounds}>Load</button>
-    </div>
+      {
+        this.props.src ?
+        <button id="ClapLoader" onMouseDown={this.clicked.bind(this)} type="button">clap</button> :
+        <button id="ClapLoader" onClick={this.props.fetchSounds.bind(this)} type="button">Load</button>
+      }
 
+    </div>
   )
 }
 }

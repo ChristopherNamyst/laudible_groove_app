@@ -56,10 +56,13 @@ const INITIAL_STATE = {
 //Basic template for a reducer....it will change later in project//
 export default function(state = INITIAL_STATE, action) {
     switch(action.type) {
-        case "RECEIVE_SOUNDS":
-      // return Object.assign({}, state, {
-      //
-      // });
+        case "RECEIVE_SOUND":
+          const newSounds = state.sounds.slice(0)
+          newSounds[5] = action.sound
+          return Object.assign({}, state, {
+            sounds: newSounds
+
+          });
 
         default:
             return state;
