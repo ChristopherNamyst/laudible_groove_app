@@ -1,14 +1,23 @@
 body {
   background-color: #5b5d60;
+  margin: auto;
 }
 h1 {
+  padding: 10px;
+  font-size: 32px;
   color:#c4c9d1;
   text-shadow: 0 0 3px #f41387;
   font-family: 'Shadows Into Light', cursive;
-  margin: auto;
+
 }
-button {
-  color:#e8e1e1;
+
+#playerClapButtons,
+#highHatButtons,
+#kickButtons,
+#snareButtons,
+#percButtons,
+#miscButtons {
+
   border-width: 2px;
   border-color: #1c1a1a;
   width: 50px;
@@ -16,11 +25,14 @@ button {
   border-radius: 5px;
   background-color:#ef4564;
 }
-#loaderButtons {
+#KickLoader, #HighHatLoader, #SnareLoader, #ClapLoader, #PercLoader, #MiscLoader {
   border-color: #2bf22b;
   background-color: #222622;
   color: #2bf22b;
+  border-width: 2px;
+  border-radius: 5px;
 }
+
 #buttons {
 
   display:flex;
@@ -30,4 +42,8 @@ button {
 .kicks,.highhats,.snares,.claps,.percs,.playerSearch  {
   display:flex;
   flex-direction: column-reverse;
+}
+
+#playButton {
+  background-color: #60d196;
 }

@@ -1,14 +1,22 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
-import '../index.css';
 import PlayerKicks from './PlayerKicks';
 import PlayerHighHats from './PlayerHighHats';
 import PlayerClaps from './PlayerClaps';
 import PlayerSnares from './PlayerSnares';
 import PlayerPercs from './PlayerPercs';
-import PlayerSearch from './PlayerSearch';
-import Loader from './Loader';
+import PlayerMisc from './PlayerMisc';
+import PercLoader from './PercLoader';
+import KickLoader from './KickLoader';
+import HighHatLoader from './HighHatLoader';
+import SnareLoader from './SnareLoader';
+import ClapLoader from './ClapLoader';
+import MiscLoader from './MiscLoader';
+import TempoSlider from './TempoSlider';
+import PlayButton from './PlayButton';
+import StopButton from './StopButton';
 
+import '../index.css';
 
 //import Audio from 'react-audioplayer';
 //import Sound from 'react-sound';
@@ -31,7 +39,7 @@ class App extends Component {
         </header>
         <container id="buttons">
       <div className="kicks">
-        <Loader />
+        <KickLoader />
        <PlayerKicks src={this.props.sounds[0]} />
        <PlayerKicks src={this.props.sounds[0]} />
        <PlayerKicks src={this.props.sounds[0]} />
@@ -47,7 +55,7 @@ class App extends Component {
 
 
        <div className="highhats">
-         <Loader />
+         <HighHatLoader />
        <PlayerHighHats src={this.props.sounds[1]} />
        <PlayerHighHats src={this.props.sounds[1]} />
        <PlayerHighHats src={this.props.sounds[1]} />
@@ -63,7 +71,7 @@ class App extends Component {
 
 
        <div className="snares">
-         <Loader />
+         <SnareLoader />
        <PlayerSnares src={this.props.sounds[2]} />
        <PlayerSnares src={this.props.sounds[2]} />
        <PlayerSnares src={this.props.sounds[2]} />
@@ -78,7 +86,7 @@ class App extends Component {
 
 
        <div className="claps">
-         <Loader />
+         <ClapLoader />
        <PlayerClaps src={this.props.sounds[3]} />
        <PlayerClaps src={this.props.sounds[3]} />
        <PlayerClaps src={this.props.sounds[3]} />
@@ -93,7 +101,7 @@ class App extends Component {
 
 
        <div className="percs">
-         <Loader />
+         <PercLoader />
        <PlayerPercs src={this.props.sounds[4]} />
        <PlayerPercs src={this.props.sounds[4]} />
        <PlayerPercs src={this.props.sounds[4]} />
@@ -108,24 +116,22 @@ class App extends Component {
 
 
 
-       <div className="playerSearch">
-         <Loader />
-       <PlayerSearch src={this.props.sounds[5]} />
-       <PlayerSearch src={this.props.sounds[5]} />
-       <PlayerSearch src={this.props.sounds[5]} />
-       <PlayerSearch src={this.props.sounds[5]} />
-       <PlayerSearch src={this.props.sounds[5]} />
-       <PlayerSearch src={this.props.sounds[5]} />
-       <PlayerSearch src={this.props.sounds[5]} />
-       <PlayerSearch src={this.props.sounds[5]} />
+       <div className="playerMisc">
 
+       <PlayerMisc src={this.props.sounds[5]} />
+       <PlayerMisc src={this.props.sounds[5]} />
+       <PlayerMisc src={this.props.sounds[5]} />
+       <PlayerMisc src={this.props.sounds[5]} />
+       <PlayerMisc src={this.props.sounds[5]} />
+       <PlayerMisc src={this.props.sounds[5]} />
+       <PlayerMisc src={this.props.sounds[5]} />
+       <PlayerMisc src={this.props.sounds[5]} />
+       <MiscLoader />
+      </div>
+      </container>
 
-       </div>
-
-
-
-     </container>
-
+     <PlayButton />
+     <StopButton />
 
       </div>
     );

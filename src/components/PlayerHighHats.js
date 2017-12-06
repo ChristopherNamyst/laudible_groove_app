@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {fetchSounds} from '../Actions' //importing my fetchSounds function//
+import {fetchSounds} from '../actions' //importing my fetchSounds function//
 
 class PlayerHighHats extends Component {
   constructor(props) {
@@ -19,8 +19,8 @@ class PlayerHighHats extends Component {
     return (<div className="PlayerHH">
       {
         this.props.src
-          ? <button onMouseDown={this.clicked.bind(this)} type="button">high hat</button>
-          : <button onClick={this.props.fetchSounds.bind(this)} type="button"></button>
+          ? <button id="highHatButtons" onMouseDown={this.clicked.bind(this)} type="button">high hat</button>
+          : <button id="highHatButtons" onClick={this.props.fetchSounds.bind(this)} type="button">high hat</button>
       }
 
     </div>);

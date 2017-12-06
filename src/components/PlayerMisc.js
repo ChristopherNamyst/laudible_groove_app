@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchSounds } from '../Actions'//importing my fetchSounds function//
+import { fetchSounds } from '../actions'//importing my fetchSounds function//
 
 
 
 
 
 
-class PlayerSearch extends Component {
+class PlayerMisc extends Component {
   constructor(props) {
       super(props);
       this.audio = new Audio();
@@ -23,11 +23,11 @@ class PlayerSearch extends Component {
     render() {
         this.audio.src = this.props.src;
         return (
-            <div className="PlayerSearch">
+            <div className="PlayerMisc">
               {
                 this.props.src ?
-                <button onMouseDown={this.clicked.bind(this)} type="button">misc</button> :
-                <button onClick={this.props.fetchSounds.bind(this)} type="button">Search</button>
+                <button id="miscButtons" onMouseDown={this.clicked.bind(this)} type="button">misc</button> :
+                <button id="miscButtons" onClick={this.props.fetchSounds.bind(this)} type="button">misc</button>
               }
 
             </div>
@@ -51,4 +51,4 @@ const mapActionsToProps = {
 
 
 //dont forget to export otherwise, all this is useless!!//
-export default connect(mapStateToProps,mapActionsToProps)(PlayerSearch);
+export default connect(mapStateToProps,mapActionsToProps)(PlayerMisc);

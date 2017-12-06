@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchSounds } from '../Actions'//importing my fetchSounds function//
+import { fetchSounds } from '../actions'//importing my fetchSounds function//
 
 
 
@@ -28,8 +28,8 @@ class PlayerClaps extends Component {
             <div className="PlayerClaps">
               {
                 this.props.src ?
-                <button onMouseDown={this.clicked.bind(this)} type="button">clap</button> :
-                <button onClick={this.props.fetchSounds.bind(this)} type="button"></button>
+                <button id="playerClapButtons" onMouseDown={this.clicked.bind(this)} type="button">clap</button> :
+                <button id="playerClapButtons" onClick={this.props.fetchSounds.bind(this)} type="button">claps</button>
               }
 
             </div>

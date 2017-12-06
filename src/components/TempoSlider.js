@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { fetchSounds } from '../actions'
 
-
-class SearchPlayer extends Component {
+class TempoSlider extends Component {
   constructor(props) {
       super(props);
 
@@ -11,10 +11,7 @@ class SearchPlayer extends Component {
 render() {
   return
 }
-
 }
 
 
-
-
-export default SearchPlayer;
+export default TempoSlider;

@@ -6,9 +6,9 @@ const INITIAL_STATE = {
     "/kits/snare/snare_4.wav",
     "/kits/perc/perc_5.wav",
     null
-  ]
-}
-  const INITIAL_STATE2 ={
+  ],
+
+
   kickArray: [
     "/kits/kicks/kick_1.wav",
     "/kits/kicks/kick_2.wav",
@@ -21,8 +21,8 @@ const INITIAL_STATE = {
     "/kits/kicks/kick_9.wav",
     "/kits/kicks/kick_10.wav"
 
-  ]
-};
+  ],
+
   highHats: [
     "/kits/hh/hh_1.wav",
     "/kits/hh/hh_2.wav",
@@ -35,7 +35,8 @@ const INITIAL_STATE = {
     "/kits/hh/hh_9.wav",
     "/kits/hh/hh_10.wav",
 
-  ]
+  ],
+
   claps: [
     "/kits/claps/claps_1.wav",
     "/kits/claps/claps_2.wav",
@@ -48,14 +49,14 @@ const INITIAL_STATE = {
     "/kits/claps/claps_9.wav",
     "/kits/claps/claps_10.wav",
 
-  ]
+  ],
 
-
+}
 
 //Basic template for a reducer....it will change later in project//
 export default function(state = INITIAL_STATE, action) {
     switch(action.type) {
-      // case
+        case "RECEIVE_SOUNDS":
       // return Object.assign({}, state, {
       //
       // });
