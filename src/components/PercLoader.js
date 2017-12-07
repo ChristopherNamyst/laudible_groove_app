@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchSounds } from '../actions'//importing my fetchSounds function//
+
 
 class PercLoader extends Component {
   constructor(props) {
@@ -11,16 +11,12 @@ class PercLoader extends Component {
 render() {
   return(
     <div className="PercLoader">
-      <button id="PercLoader" type="button" onClick={this.props.fetchSounds}>Load</button>
+      <button id="PercLoader" type="button">Load</button>
     </div>
 
   )
 }
 }
 
-const mapActionsToProps = {
-  fetchSounds
-}
-
 //dont forget to export otherwise, all this is useless!!//
-export default connect(null,mapActionsToProps)(PercLoader);
+export default PercLoader;

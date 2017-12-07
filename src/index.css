@@ -47,3 +47,15 @@ h1 {
 #playButton {
   background-color: #60d196;
 }
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown__content {
+    display: none;
+    position: absolute;
+}
+
+.dropdown--active .dropdown__content {
+    display: block;
+}

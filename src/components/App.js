@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
-import PlayerKicks from './PlayerKicks';
-import PlayerHighHats from './PlayerHighHats';
-import PlayerClaps from './PlayerClaps';
-import PlayerSnares from './PlayerSnares';
-import PlayerPercs from './PlayerPercs';
-import PlayerMisc from './PlayerMisc';
+
+import Player from './Player';
 import PercLoader from './PercLoader';
 import KickLoader from './KickLoader';
 import HighHatLoader from './HighHatLoader';
@@ -15,7 +11,6 @@ import MiscLoader from './MiscLoader';
 import TempoSlider from './TempoSlider';
 import PlayButton from './PlayButton';
 import StopButton from './StopButton';
-
 import '../index.css';
 
 //import Audio from 'react-audioplayer';
@@ -40,14 +35,14 @@ class App extends Component {
         <container id="buttons">
       <div className="kicks">
         <KickLoader />
-       <PlayerKicks src={this.props.sounds[0]} />
-       <PlayerKicks src={this.props.sounds[0]} />
-       <PlayerKicks src={this.props.sounds[0]} />
-       <PlayerKicks src={this.props.sounds[0]} />
-       <PlayerKicks src={this.props.sounds[0]} />
-       <PlayerKicks src={this.props.sounds[0]} />
-       <PlayerKicks src={this.props.sounds[0]} />
-       <PlayerKicks src={this.props.sounds[0]} />
+       <Player label="kick" src={this.props.sounds[0]} />
+       <Player label="kick" src={this.props.sounds[0]} />
+       <Player label="kick" src={this.props.sounds[0]} />
+       <Player label="kick" src={this.props.sounds[0]} />
+       <Player label="kick" src={this.props.sounds[0]} />
+       <Player label="kick" src={this.props.sounds[0]} />
+       <Player label="kick" src={this.props.sounds[0]} />
+       <Player label="kick" src={this.props.sounds[0]} />
 
 
        </div>
@@ -56,14 +51,14 @@ class App extends Component {
 
        <div className="highhats">
          <HighHatLoader />
-       <PlayerHighHats src={this.props.sounds[1]} />
-       <PlayerHighHats src={this.props.sounds[1]} />
-       <PlayerHighHats src={this.props.sounds[1]} />
-       <PlayerHighHats src={this.props.sounds[1]} />
-       <PlayerHighHats src={this.props.sounds[1]} />
-       <PlayerHighHats src={this.props.sounds[1]} />
-       <PlayerHighHats src={this.props.sounds[1]} />
-       <PlayerHighHats src={this.props.sounds[1]} />
+       <Player label="High Hat" src={this.props.sounds[1]} />
+       <Player label="High Hat" src={this.props.sounds[1]} />
+       <Player label="High Hat" src={this.props.sounds[1]} />
+       <Player label="High Hat" src={this.props.sounds[1]} />
+       <Player label="High Hat" src={this.props.sounds[1]} />
+       <Player label="High Hat" src={this.props.sounds[1]} />
+       <Player label="High Hat" src={this.props.sounds[1]} />
+       <Player label="High Hat" src={this.props.sounds[1]} />
 
 
        </div>
@@ -72,14 +67,14 @@ class App extends Component {
 
        <div className="snares">
          <SnareLoader />
-       <PlayerSnares src={this.props.sounds[2]} />
-       <PlayerSnares src={this.props.sounds[2]} />
-       <PlayerSnares src={this.props.sounds[2]} />
-       <PlayerSnares src={this.props.sounds[2]} />
-       <PlayerSnares src={this.props.sounds[2]} />
-       <PlayerSnares src={this.props.sounds[2]} />
-       <PlayerSnares src={this.props.sounds[2]} />
-       <PlayerSnares src={this.props.sounds[2]} />
+       <Player label="snare" src={this.props.sounds[2]} />
+       <Player label="snare" src={this.props.sounds[2]} />
+       <Player label="snare" src={this.props.sounds[2]} />
+       <Player label="snare" src={this.props.sounds[2]} />
+       <Player label="snare" src={this.props.sounds[2]} />
+       <Player label="snare" src={this.props.sounds[2]} />
+       <Player label="snare" src={this.props.sounds[2]} />
+       <Player label="snare" src={this.props.sounds[2]} />
 
        </div>
 
@@ -87,29 +82,28 @@ class App extends Component {
 
        <div className="claps">
          <ClapLoader />
-       <PlayerClaps src={this.props.sounds[3]} />
-       <PlayerClaps src={this.props.sounds[3]} />
-       <PlayerClaps src={this.props.sounds[3]} />
-       <PlayerClaps src={this.props.sounds[3]} />
-       <PlayerClaps src={this.props.sounds[3]} />
-       <PlayerClaps src={this.props.sounds[3]} />
-       <PlayerClaps src={this.props.sounds[3]} />
-       <PlayerClaps src={this.props.sounds[3]} />
-
+       <Player label="clap" src={this.props.sounds[3]} />
+       <Player label="clap" src={this.props.sounds[3]} />
+       <Player label="clap" src={this.props.sounds[3]} />
+       <Player label="clap" src={this.props.sounds[3]} />
+       <Player label="clap" src={this.props.sounds[3]} />
+       <Player label="clap" src={this.props.sounds[3]} />
+       <Player label="clap" src={this.props.sounds[3]} />
+       <Player label="clap" src={this.props.sounds[3]} />
        </div>
 
 
 
        <div className="percs">
          <PercLoader />
-       <PlayerPercs src={this.props.sounds[4]} />
-       <PlayerPercs src={this.props.sounds[4]} />
-       <PlayerPercs src={this.props.sounds[4]} />
-       <PlayerPercs src={this.props.sounds[4]} />
-       <PlayerPercs src={this.props.sounds[4]} />
-       <PlayerPercs src={this.props.sounds[4]} />
-       <PlayerPercs src={this.props.sounds[4]} />
-       <PlayerPercs src={this.props.sounds[4]} />
+       <Player label="perc" src={this.props.sounds[4]} />
+       <Player label="perc" src={this.props.sounds[4]} />
+       <Player label="perc" src={this.props.sounds[4]} />
+       <Player label="perc" src={this.props.sounds[4]} />
+       <Player label="perc" src={this.props.sounds[4]} />
+       <Player label="perc" src={this.props.sounds[4]} />
+       <Player label="perc" src={this.props.sounds[4]} />
+       <Player label="perc" src={this.props.sounds[4]} />
 
 
        </div>
@@ -118,20 +112,20 @@ class App extends Component {
 
        <div className="playerMisc">
 
-       <PlayerMisc src={this.props.sounds[5]} />
-       <PlayerMisc src={this.props.sounds[5]} />
-       <PlayerMisc src={this.props.sounds[5]} />
-       <PlayerMisc src={this.props.sounds[5]} />
-       <PlayerMisc src={this.props.sounds[5]} />
-       <PlayerMisc src={this.props.sounds[5]} />
-       <PlayerMisc src={this.props.sounds[5]} />
-       <PlayerMisc src={this.props.sounds[5]} />
+       <Player label="misc" src={this.props.sounds[5]} />
+       <Player label="misc" src={this.props.sounds[5]} />
+       <Player label="misc" src={this.props.sounds[5]} />
+       <Player label="misc" src={this.props.sounds[5]} />
+       <Player label="misc" src={this.props.sounds[5]} />
+       <Player label="misc" src={this.props.sounds[5]} />
+       <Player label="misc" src={this.props.sounds[5]} />
+       <Player label="misc" src={this.props.sounds[5]} />
        <MiscLoader />
       </div>
       </container>
 
-     <PlayButton />
-     <StopButton />
+     {/* <PlayButton />
+     <StopButton /> */}
 
       </div>
     );

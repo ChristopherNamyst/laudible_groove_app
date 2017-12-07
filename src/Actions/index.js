@@ -5,7 +5,7 @@ export function fetchSounds(userInput) {
 
       // ask the user for a sound search term
       var userInput = prompt("Search for a new sound");
-      if( userInput )
+      
 
         dispatch(requestSounds());
         // When working with a full-stack app, we can reach out APIs by just

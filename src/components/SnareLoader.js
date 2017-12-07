@@ -11,16 +11,12 @@ class SnareLoader extends Component {
 render() {
   return(
     <div className="SnareLoader">
-      <button id="SnareLoader" type="button" onClick={this.props.fetchSounds}>Load</button>
+      <button id="SnareLoader" type="button">Load</button>
     </div>
 
   )
 }
 }
 
-const mapActionsToProps = {
-  fetchSounds
-}
-
 //dont forget to export otherwise, all this is useless!!//
-export default connect(null,mapActionsToProps)(SnareLoader);
+export default SnareLoader;

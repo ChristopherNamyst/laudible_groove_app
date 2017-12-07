@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchSounds } from '../actions'//importing my fetchSounds function//
 
 class HighHatLoader extends Component {
   constructor(props) {
@@ -10,17 +9,14 @@ class HighHatLoader extends Component {
 }
 render() {
   return(
-    <div className="HighHatLoader">
-      <button id="HighHatLoader" type="button" onClick={this.props.fetchSounds}>Load</button>
-    </div>
-
+      <div className="HighHatLoader">
+        <button id="HighHatLoader" type="button">Load</button>
+      </div>
   )
 }
 }
 
-const mapActionsToProps = {
-  fetchSounds
-}
+
 
 //dont forget to export otherwise, all this is useless!!//
-export default connect(null,mapActionsToProps)(HighHatLoader);
+export default HighHatLoader;

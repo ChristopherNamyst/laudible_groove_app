@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class PlayerMisc extends Component {
+class Player extends Component {
   constructor(props) {
       super(props);
       this.audio = new Audio();
@@ -9,15 +9,15 @@ class PlayerMisc extends Component {
 
   clicked(){
     this.audio.play()
-    console.log("Hey I worked!");
+    //console.log("Hey I worked!");
 
   };
 
     render() {
         this.audio.src = this.props.src;
         return (
-            <div className="PlayerMisc">
-                <button id="miscButtons" onMouseDown={this.clicked.bind(this)} type="button">misc</button> 
+            <div className="Player">
+                <button id="miscButtons" onMouseDown={this.clicked.bind(this)} type="button">{this.props.label}</button>
             </div>
 
 
@@ -30,4 +30,4 @@ class PlayerMisc extends Component {
 
 
 //dont forget to export otherwise, all this is useless!!//
-export default PlayerMisc;
+export default Player;

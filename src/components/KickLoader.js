@@ -11,16 +11,13 @@ class KickLoader extends Component {
 render() {
   return(
     <div className="KickLoader">
-      <button id="KickLoader" type="button" onClick={this.props.fetchSounds}>Load</button>
+      <button id="KickLoader" type="button">Load</button>
     </div>
 
   )
 }
 }
 
-const mapActionsToProps = {
-  fetchSounds
-}
 
 //dont forget to export otherwise, all this is useless!!//
-export default connect(null,mapActionsToProps)(KickLoader);
+export default KickLoader;
