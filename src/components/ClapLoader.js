@@ -11,8 +11,8 @@ class ClapLoader extends Component {
 }
 render() {
   return(
-    <div className="HighHatLoader">
-      {/* <button id="KickLoader" type="button">Load</button> */}
+    <div className="ClapLoader">
+      
       <DropdownButton
     btnSize="xs"
     title="Load"
@@ -20,7 +20,7 @@ render() {
     className="load-button"
     dropup
     onSelect={(soundUrl) => {
-      this.props.setSound(0, soundUrl)
+      this.props.setSound(3, soundUrl)
     }}
 >
     <MenuItem eventKey="/kits/claps/clap_1.wav">clap1</MenuItem>
@@ -28,6 +28,12 @@ render() {
     <MenuItem eventKey="/kits/claps/clap_3.wav">clap3</MenuItem>
     <MenuItem eventKey="/kits/claps/clap_4.wav">clap4</MenuItem>
     <MenuItem eventKey="/kits/claps/clap_5.wav">clap5</MenuItem>
+    <MenuItem eventKey="/kits/claps/clap_6.wav">clap6</MenuItem>
+    <MenuItem eventKey="/kits/claps/clap_7.wav">clap7</MenuItem>
+    <MenuItem eventKey="/kits/claps/clap_8.wav">clap8</MenuItem>
+    <MenuItem eventKey="/kits/claps/clap_9.wav">clap9</MenuItem>
+    <MenuItem eventKey="/kits/claps/clap_10.wav">clap10</MenuItem>
+
 
 </DropdownButton>
     </div>

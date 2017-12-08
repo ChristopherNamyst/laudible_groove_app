@@ -26,8 +26,14 @@ render() {
     <MenuItem eventKey="/kits/kicks/kick_1.wav">kick1</MenuItem>
     <MenuItem eventKey="/kits/kicks/kick_2.wav">kick2</MenuItem>
     <MenuItem eventKey="/kits/kicks/kick_3.wav">kick3</MenuItem>
-    <MenuItem eventKey="/kits/kicks/kick_3.wav">kick4</MenuItem>
-    <MenuItem eventKey="/kits/kicks/kick_3.wav">kick5</MenuItem>
+    <MenuItem eventKey="/kits/kicks/kick_4.wav">kick4</MenuItem>
+    <MenuItem eventKey="/kits/kicks/kick_5.wav">kick5</MenuItem>
+    <MenuItem eventKey="/kits/kicks/kick_6.wav">kick6</MenuItem>
+    <MenuItem eventKey="/kits/kicks/kick_7.wav">kick7</MenuItem>
+    <MenuItem eventKey="/kits/kicks/kick_8.wav">kick8</MenuItem>
+    <MenuItem eventKey="/kits/kicks/kick_9.wav">kick9</MenuItem>
+    <MenuItem eventKey="/kits/kicks/kick_10.wav">kick10</MenuItem>
+
 
 </DropdownButton>
     </div>

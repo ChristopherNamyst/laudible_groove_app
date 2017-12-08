@@ -12,7 +12,7 @@ class HighHatLoader extends Component {
 render() {
   return(
     <div className="HighHatLoader">
-      {/* <button id="KickLoader" type="button">Load</button> */}
+      
       <DropdownButton
     btnSize="xs"
     title="Load"
@@ -20,7 +20,7 @@ render() {
     className="load-button"
     dropup
     onSelect={(soundUrl) => {
-      this.props.setSound(0, soundUrl)
+      this.props.setSound(1, soundUrl)
     }}
 >
     <MenuItem eventKey="/kits/hh/hh_1.wav">hh1</MenuItem>
@@ -28,6 +28,11 @@ render() {
     <MenuItem eventKey="/kits/hh/hh_3.wav">hh3</MenuItem>
     <MenuItem eventKey="/kits/hh/hh_4.wav">hh4</MenuItem>
     <MenuItem eventKey="/kits/hh/hh_5.wav">hh5</MenuItem>
+    <MenuItem eventKey="/kits/hh/hh_6.wav">hh6</MenuItem>
+    <MenuItem eventKey="/kits/hh/hh_7.wav">hh7</MenuItem>
+    <MenuItem eventKey="/kits/hh/hh_8.wav">hh8</MenuItem>
+    <MenuItem eventKey="/kits/hh/hh_9.wav">hh9</MenuItem>
+    <MenuItem eventKey="/kits/hh/hh_10.wav">hh10</MenuItem>
 
 </DropdownButton>
     </div>
