@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchSounds } from '../actions'//importing my fetchSounds function//
+import { fetchSounds } from '../actions';
+
+//importing my fetchSounds function//
 
 class MiscLoader extends Component {
   constructor(props) {
@@ -11,7 +13,11 @@ class MiscLoader extends Component {
 render() {
   return(
     <div className="MiscLoader">
-      <button id="MiscLoader" type="button" onClick={this.props.fetchSounds}>Load</button>
+      <button
+
+
+
+        id="MiscLoader" type="button" onClick={this.props.fetchSounds}>SEARCH</button>
     </div>
 
   )

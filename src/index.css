@@ -1,61 +1,61 @@
 body {
-  background-color: #5b5d60;
-  margin: auto;
-}
-h1 {
-  padding: 10px;
-  font-size: 32px;
-  color:#c4c9d1;
-  text-shadow: 0 0 3px #f41387;
-  font-family: 'Shadows Into Light', cursive;
+
+  background-color: #2a333d;
+  align-content: center;
 
 }
+h1 {
+  text-align: center;
+  padding: 10px;
+  font-size: 40px;
+  color:#c4c9d1;
+  text-shadow: 0 0 3px #f41387;
+  font-family: 'Righteous', cursive;
+
+}
+
 
 #playerClapButtons,
 #highHatButtons,
 #kickButtons,
 #snareButtons,
 #percButtons,
-#miscButtons {
-
+#Buttons {
+  color: #bcc7d3;
   border-width: 2px;
-  border-color: #1c1a1a;
-  width: 50px;
+  border-color: #ede1e7;
+  width: 55px;
   height: 50px;
-  border-radius: 5px;
-  background-color:#ef4564;
+  border-radius: 7px;
+  background-color:#ef007f;
 }
-#KickLoader, #HighHatLoader, #SnareLoader, #ClapLoader, #PercLoader, #MiscLoader {
+#MiscLoader{
+  width:55px;
+  height:24px;
+  font-size: 10px;
+
+
+}
+
+#KickLoader, #HighHatLoader, #SnareLoader, #ClapLoader, #PercLoader, #MiscLoader, button.load-button, button.load-button:hover, button.load-button:active {
   border-color: #2bf22b;
   background-color: #222622;
+  background-image: none;
   color: #2bf22b;
   border-width: 2px;
-  border-radius: 5px;
+  border-radius: 8px !important;
 }
 
 #buttons {
-
   display:flex;
   flex-direction:row;
+  justify-content: center;
+
+
 }
 
 .kicks,.highhats,.snares,.claps,.percs,.playerSearch  {
   display:flex;
   flex-direction: column-reverse;
-}
 
-#playButton {
-  background-color: #60d196;
-}
-.dropdown {
-    display: inline-block;
-}
-
-.dropdown__content {
-    display: none;
-    position: absolute;
-}
-
-.dropdown--active .dropdown__content {
-    display: block;
 }

@@ -17,7 +17,7 @@ class Player extends Component {
         this.audio.src = this.props.src;
         return (
             <div className="Player">
-                <button id="miscButtons" onMouseDown={this.clicked.bind(this)} type="button">{this.props.label}</button>
+                <button id="Buttons" onMouseDown={this.clicked.bind(this)} type="button">{this.props.label}</button>
             </div>
 
 

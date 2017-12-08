@@ -5,7 +5,7 @@ export function fetchSounds(userInput) {
 
       // ask the user for a sound search term
       var userInput = prompt("Search for a new sound");
-      
+
 
         dispatch(requestSounds());
         // When working with a full-stack app, we can reach out APIs by just
@@ -19,7 +19,7 @@ export function fetchSounds(userInput) {
           .done(function(response) {
             // console.log(response.sound.previews["preview-hq-mp3"]);
             console.log(response.previews["preview-hq-mp3"]);
-           dispatch(receiveSound(response.previews["preview-hq-mp3"]));
+           dispatch(setSound(5, response.previews["preview-hq-mp3"]));
           });
         });
     };
@@ -31,9 +31,10 @@ function requestSounds() {
     };
 }
 
-function receiveSound(sound) {
+export function setSound(index, sound) {
     return {
-        type: "RECEIVE_SOUND",
+        type: "SET_SOUND",
+        index,
         sound
     };
 }
