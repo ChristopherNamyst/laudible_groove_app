@@ -2,9 +2,9 @@ const INITIAL_STATE = {
   // currently assigned sounds
   sounds: [
     "/kits/kicks/kick_1.wav", // 0 - sound for kick track
-    "/kits/claps/clap_2.wav", // 1 - sound for the clap track
-    "/kits/hh/hh_3.wav",
+    "/kits/hh/hh_3.wav", // 1 - sound for the high hat track
     "/kits/snare/snare_4.wav",
+    "/kits/claps/clap_2.wav",
     "/kits/perc/perc_5.wav",
     null
   ]

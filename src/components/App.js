@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
 import Dropdown, { DropdownButton, MenuItem } from '@trendmicro/react-dropdown';
+import Tracker from './Tracker';
 import Player from './Player';
 import PercLoader from './PercLoader';
 import KickLoader from './KickLoader';
@@ -14,6 +15,7 @@ import StopButton from './StopButton';
 import '@trendmicro/react-buttons/dist/react-buttons.css';
 import '@trendmicro/react-dropdown/dist/react-dropdown.css';
 import '../index.css';
+
 
 //import Audio from 'react-audioplayer';
 //import Sound from 'react-sound';
@@ -35,6 +37,21 @@ class App extends Component {
         </h1>
         </header>
         <container id="buttons">
+          {/* <div>
+            <ul>
+            <Tracker />
+            <Tracker />
+            <Tracker />
+            <Tracker />
+            <Tracker />
+            <Tracker />
+            <Tracker />
+            <Tracker />
+          </ul>
+
+          </div> */}
+
+
       <div className="kicks">
        <KickLoader />
 
@@ -127,10 +144,12 @@ class App extends Component {
       </div>
       </container>
 
-     {/* <PlayButton />
-     <StopButton /> */}
+
 
       </div>
+
+
+
     );
   }
 }

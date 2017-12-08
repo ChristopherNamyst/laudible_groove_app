@@ -36,7 +36,14 @@ h1 {
   width:55px;
   height:24px;
   font-size: 10px;
+}
+#tracker  {
 
+  width:20px;
+  height:30px;
+  border-radius: 20%;
+  margin-right: 10px;
+  margin-bottom: 20px;
 
 }
 
